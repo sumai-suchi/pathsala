@@ -42,20 +42,20 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
+  --color-button: var(--button);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-
+  /* 
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
+  --radius-4xl: calc(var(--radius) * 2.6); */
 }
 
 /* ====================== Scholarly Monograph Theme ====================== */
@@ -89,8 +89,8 @@
     --border: hsl(48 8% 88%);
     --input: hsl(48 8% 88%);
     --ring: hsl(355 75% 18%);
-
-    --radius: 0.5rem;
+    --button: rgb(185, 122, 114);
+    --neutral: rgb(128, 116, 115);
   }
 
   .dark {
@@ -119,7 +119,9 @@
 
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: "kern" 1, "tnum" 1;
+    font-feature-settings:
+      "kern" 1,
+      "tnum" 1;
   }
 
   html {
